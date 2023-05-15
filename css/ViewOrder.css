@@ -1,0 +1,261 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    font-size: 13px;
+}
+
+* img {
+    max-width: 20px;
+    max-height: auto;
+}
+
+
+
+.navigate_menu {
+    margin-bottom: 15px;
+
+}
+
+.navigate_menu .title p {
+    display: inline-block;
+    padding: 17px 15px;
+    font-size: 18px;
+    text-align: middle;
+
+}
+
+.navigate_menu .button_span {
+    float: right;
+}
+
+.navigate_menu .button_span a {
+    text-decoration: none;
+}
+
+.navigate_menu .button_span .button3 {
+    background-color: rgb(36, 36, 255);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    display: inline-block;
+}
+
+
+.navigate_menu .button_span .button1,
+.button2,
+.button4 {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    color: rgb(36, 36, 255);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    display: inline-block;
+}
+
+.navigate_menu .button_span .button1:hover,
+.button2:hover,
+.button4:hover {
+    background-color: #4d4dff;
+    color: #fff;
+}
+
+.navigate_menu hr {
+    width: 100%
+}
+
+.identity_bar {
+    background-color: #c1c1bd;
+    margin: 4px 0px;
+    padding: 5px 5px;
+
+}
+
+.identity_bar p,
+.identity_bar a {
+    font-size: 13px;
+}
+
+.identity_bar a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.mainbody p.heading1 {
+    margin: 1em 1em 0.7em;
+    padding: 15px;
+    font-size: 16px;
+    font-size: 18px;
+}
+
+.table-filter {
+    padding: 0 2em;
+}
+
+
+
+.table-filter .col-sm-1 {
+    width: 50%;
+    display: flex;
+    vertical-align: middle;
+}
+
+.table-filter .show-entries {
+    padding: 0 15px 0 0;
+}
+
+.table-filter .show-entries label {
+    margin-right: 7px;
+}
+
+
+
+.table-filter .col-sm-2 {
+    width: 100%;
+    text-align: right;
+    vertical-align: middle;
+
+}
+
+.table-filter .col-sm-2 input {
+    border-style: solid;
+    border-color: #e9e9e9;
+}
+
+
+.table-filter .col-sm-2 button {
+    vertical-align: middle;
+}
+
+.table-filter .row {
+    width: 100%;
+    display: flex;
+
+}
+
+.table-filter input,
+.table-filter select {
+    height: 34px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #ddd;
+    box-shadow: none;
+}
+
+
+
+.table-filter {
+    padding: 5px 0 15px;
+    border-bottom: 1px solid #e9e9e9;
+    margin: 0 3em;
+    margin-bottom: 5px;
+}
+
+.table-filter .btn {
+    margin-left: 20px;
+    height: 34px;
+    padding: 0px 3px;
+    background-color: light;
+    opacity: 80%;
+}
+
+.table-filter .col-sm-2 p {
+    display: inline-block;
+}
+
+.table-filter .col-sm-2 label {
+    font-weight: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.mainbody table {
+    width: 90%;
+    padding: 10px;
+    text-align: left;
+    font-size: auto;
+}
+
+.mainbody table p {
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+
+.mainbody table,
+.mainbody tr {
+    border-bottom: 1px solid rgb(157, 157, 157);
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+
+}
+
+.mainbody table th {
+    padding: 8px 15px 13px;
+
+}
+
+.mainbody table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.mainbody .tbody tr:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+
+
+.mainbody a {
+    color: rgb(36, 36, 255);
+}
+
+.mainbody a:hover {
+    color: rgb(87, 87, 249);
+}
+
+.mainbody #status::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: red;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.mainbody .delivered#status::before {
+    background-color: #10c469;
+}
+
+.mainbody .shipped#status::before {
+    background-color: #62c9e8;
+}
+
+.mainbody .pending#status::before {
+    background-color: #FFC107;
+}
+
+.mainbody .cancelled#status::before {
+    background-color: #ff5b5b;
+}
+
+.hidden-row {
+    display: none;
+}

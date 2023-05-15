@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/PlaceOrder.css">
+
+    
+
+    <title>Place Order</title>
+</head>
+
+<body>
+    <div class="navigate_menu">
+        <span class="title">
+            <p class="heading">Yummy Restaurant Group Limited</p>
+        </span>
+
+        <span class="button_span">
+            <a href="./index.html">
+                <button class="button2">Place Order</button>
+            </a>
+            <a href="./ViewOrder.html">
+                <button class="button3">View Order</button>
+            </a>
+            <a href="./UpdateProfile.html">
+                <button class="button4">Update Profile</button>
+            </a>
+        </span>
+
+        <hr>
+
+    </div>
+    <div class="identity_bar">
+        <p>PM001 Billy Wong &nbsp;| &nbsp;<a>Logout</a></p>
+    </div>
+
+    <div class="mainbody">
+
+        <p class="heading1">Place Order</p>
+
+        <span class="left_span">
+            <h4 class="heading2">&nbsp;Order Information</h4>
+            <table width=100%;>
+                <tr>
+                    <td>Order ID</td>
+                    <td>Staff ID</td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="PO-10001" disabled></td>
+                    <td><input type="text" value="PM001" disabled></td><br />
+                </tr>
+                <tr>
+                    <td> Order Date & Time </td>
+                </tr>
+                <tr>
+                    <td> <input type="datetime-local"></td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+        </span>
+
+        <span class="right_span">
+            <h4 class="heading3">&nbsp;&nbsp;&nbsp;Summary | HKD <span class="count"></span></h4>
+
+            <table width="100%">
+                <tr class="row1" id="item">
+                    <td rowspan="2" class="picture" id="carrot">
+                        <img src="images/australiaCarrot.png">
+                    </td>
+                    <td class="item" id="carrot">
+                        Carrot <p class="itemid">&nbsp;#F001</p>
+                    </td>
+
+                    <td rowspan="2" class="price" id="carrot">
+                        $19
+                    </td>
+                </tr>
+                <tr class="row2" id="item">
+                    <td class="origin" id="carrot">
+                        Origin: Australia
+                    </td>
+
+                </tr>
+                <tr class="row1" id="item">
+                    <td rowspan="2" class="picture" id="lemon">
+                        <img src="images/lemon.png">
+                    </td>
+                    <td class="item" id="lemon">
+                        Lemon <p class="itemid">&nbsp;#F002</p>
+                    </td>
+                    <td rowspan="2" class="price" id="lemon">
+                        $48
+                    </td>
+                </tr>
+                <tr class="row2" id="item">
+                    <td class="origin" id="lemon">
+                        Origin: South Africa
+                    </td>
+                </tr>
+                <tr class="row1" id="item">
+                    <td rowspan="2" class="picture" id="mango">
+                        <img src="images/mango.png">
+                    </td>
+                    <td class="item" id="mango">
+                        Mango <p class="itemid">&nbsp;#F003</p>
+                    </td>
+                    <td rowspan="2" class="price" id="mango">
+                        $78
+                    </td>
+                </tr>
+                <tr class="row2" id="item">
+                    <td class="origin" id="mango">
+                        Origin: Peru
+                    </td>
+                </tr>
+                <tr class="row1" id="item">
+                    <td rowspan="2" class="picture" id="orange">
+                        <img src="images/orange.png">
+                    </td>
+                    <td class="item" id="orange">
+                        Orange <p class="itemid">&nbsp;#F004</p>
+                    </td>
+                    <td rowspan="2" class="price" id="orange">
+                        $8
+                    </td>
+                </tr>
+                <tr class="row2" id="item">
+                    <td class="origin" id="orange">
+                        Origin: America
+                    </td>
+                </tr>
+                <tr class="row1" id="item">
+                    <td rowspan="2" class="picture">
+                        <img src="images/potato.png">
+                    </td>
+                    <td class="item" id="potato">
+                        Potato <p class="itemid">&nbsp;#F005</p>
+                    </td>
+                    <td rowspan="2" class="price" id="potato">
+                        $37
+                    </td>
+                </tr>
+                <tr class="row2" id="item">
+                    <td class="origin" id="potato">
+                        Origin: Hong Kong
+                    </td>
+                </tr>
+                <tr class="row1" id="item">
+                    <td rowspan="2" class="picture" id="apple">
+                        <img src="images/redApple.png">
+                    </td>
+                    <td class="item" id="apple">
+                        Apple <p class="itemid">&nbsp;#F006</p>
+                    </td>
+                    <td rowspan="2" class="price" id="apple">
+                        $28
+                    </td>
+                </tr>
+                <tr class="row2" id="item">
+                    <td class="origin" id="apple">
+                        Origin: France
+                    </td>
+                </tr>
+                <tr height="35" id="discount">
+                    <td colspan="2" class="discount">
+                        Discount
+                    </td>
+                    <td class="price">
+                        -$0
+                    </td>
+                </tr>
+                <tr height="40" id="total">
+                    <td colspan="2" class="total_description">
+                        <strong>Total</strong>
+                    </td>
+                    <td class="total">
+                    </td>
+                </tr>
+
+
+            </table>
+        </span>
+
+
+        <div class="delivery_checkbox">
+            <h4 class="heading2">&nbsp;Shipping method</h4>
+            <div class="option_span">
+                <input type="checkbox" id="delivery" name="delivery">
+                <label for="delivery">&nbsp;Delivery</label>
+            </div>
+
+            <table class="tableshown" hidden>
+                <tr>
+                    <td>
+                        <p>
+                            Delivery Date & Time,
+                            &nbsp;&nbsp;&nbsp;<input type="datetime-local">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Delivery Address</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea rows="4" cols="40" style="width: 100%" class="input"></textarea>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+
+        <div>
+            <button class="submit_button" id="create-order-btn">Create Order</button>
+        </div>
+
+        <script type="text/javascript">
+            /* Count */
+            // Get all the table rows that have an id containing the word "item"
+            var itemRows = document.querySelectorAll('tr[id^="item"].row1');
+
+            // Count the number of item rows
+            var itemCount = itemRows.length;
+
+            // Set the count value to the paragraph element with class "count"
+            document.querySelector('.count').textContent = itemCount;
+
+            /* Price */
+            // get all elements with class "price"
+            var prices = document.getElementsByClassName("price");
+
+            // initialize total variable to 0
+            var total = 0;
+
+            // loop through all elements with class "price"
+            for (var i = 0; i < prices.length; i++) {
+                // get the value of the current element and remove the "$" symbol
+                var price = prices[i].textContent.replace("$", "");
+                // add the price to the total (convert it to a number first)
+                total += Number(price);
+            }
+
+            // set the text content of the element with class "total" to the total value wrapped in a <strong> tag
+            document.querySelector(".total").innerHTML = " <strong>$" + total + "</strong>";
+
+            /* Delivery Button */
+            window.onload = function () {
+                var deliveryInput = document.getElementById("delivery");
+                var deliveryTable = document.querySelector(".delivery_checkbox .tableshown");
+
+                deliveryInput.onclick = function () {
+                    if (this.checked) {
+                        deliveryTable.style.display = "table";
+                    } else {
+                        deliveryTable.style.display = "none";
+                    }
+                };
+            };
+
+            /*Submit Button*/
+            const createOrderBtn = document.getElementById('create-order-btn');
+            const overlay = document.createElement('div');
+            overlay.className = 'overlay';
+
+            createOrderBtn.addEventListener('click', () => {
+                const alertBox = document.createElement('div');
+                alertBox.className = 'alert-box';
+
+                const message = document.createElement('p');
+                message.textContent = 'Are you sure you want to create the order?';
+
+                const confirmBtn = document.createElement('button');
+                confirmBtn.textContent = 'Yes';
+
+                const cancelBtn = document.createElement('button');
+                cancelBtn.textContent = 'No';
+                cancelBtn.className = 'cancel';
+
+                alertBox.appendChild(message);
+                alertBox.appendChild(confirmBtn);
+                alertBox.appendChild(cancelBtn);
+                document.body.appendChild(alertBox);
+                document.body.appendChild(overlay);
+
+                confirmBtn.addEventListener('click', () => {
+                    alertBox.remove();
+                    overlay.style.display = 'none';
+                    alert('Order sent out');
+                });
+
+                cancelBtn.addEventListener('click', () => {
+                    alertBox.remove();
+                    overlay.style.display = 'none';
+                    alert('Order cancelled');
+                });
+
+                overlay.style.display = 'block';
+            });
+
+
+        </script>
+
+    </div>
+
+
+</body>
+
+</html>

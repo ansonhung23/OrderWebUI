@@ -1,0 +1,186 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    font-size: 13px;
+}
+
+.navigate_menu {
+    margin-bottom: 15px;
+
+}
+
+.navigate_menu .title p {
+    display: inline-block;
+    padding: 17px 15px;
+    font-size: 18px;
+    text-align: middle;
+
+}
+
+.navigate_menu .button_span {
+    float: right;
+}
+
+.navigate_menu .button_span a {
+    text-decoration: none;
+}
+
+.navigate_menu .button_span .button3 {
+    background-color: rgb(103, 103, 243);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    display: inline-block;
+}
+
+
+.navigate_menu .button_span .button1,
+.button2,
+.button4 {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    color: rgb(36, 36, 255);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    display: inline-block;
+}
+
+.navigate_menu .button_span .button1:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover {
+    background-color: #4d4dff;
+    color: #fff;
+}
+
+.navigate_menu hr {
+    width: 100%
+}
+
+.identity_bar {
+    background-color: #c1c1bd;
+    margin: 4px 0px;
+    padding: 5px 5px;
+
+}
+
+.identity_bar p,
+.identity_bar a {
+    font-size: 13px;
+}
+
+.identity_bar a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.mainbody p {
+    margin: 4px 1em;
+    padding: 15px;
+    font-size: 16px;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+
+
+.mainbody table {
+    display: inline-flex;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: left;
+    font-size: auto;
+    
+
+}
+
+.mainbody table p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.mainbody table,
+.mainbody tr {
+    border-collapse: collapse;
+
+
+}
+
+.mainbody table th,
+.mainbody table td {
+    padding: 1em 2em 1em 15px;
+    text-decoration: none;
+}
+
+.mainbody .tbody tr:hover {
+    background-color: rgb(240, 240, 240);
+
+}
+
+.mainbody button {
+    padding: 1.8px;
+}
+
+.mainbody a {
+    color: rgb(36, 36, 255);
+}
+
+.mainbody a:hover {
+    color: rgb(87, 87, 249);
+}
+
+table {
+    width: auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+
+th,
+td {
+    text-align: left;
+
+
+}
+
+th {
+    background-color: #655eeb;
+    color: white;
+    width: 10em;
+}
+
+.container1 {
+    margin-left: 3em;
+    margin-right: 10em;
+    width: auto;
+    padding: 1em 3em 0;
+    
+}
+
+.container1 table{
+    display:block;
+    justify-content: none;
+}
+
+.container2 {
+    margin-left: 3em;
+    margin-right: 10em;
+    padding: 1em 3em 0;
+    width: 100%;
+    display: block;
+    justify-content: left;
+}
+

@@ -1,0 +1,318 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+* input {
+    height: 2em;
+}
+
+* img {
+    max-width: 30px;
+    max-height: auto;
+}
+
+
+.navigate_menu {
+    margin-bottom: 15px;
+
+}
+
+
+.navigate_menu .title p {
+    display: inline-block;
+    padding: 17px 15px;
+    font-size: 18px;
+    text-align: middle;
+
+}
+
+.navigate_menu .button_span {
+    float: right;
+}
+
+.navigate_menu .button_span a {
+    text-decoration: none;
+}
+
+.navigate_menu .button_span .button2 {
+    background-color: rgb(103, 103, 243);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    display: inline-block;
+}
+
+
+.navigate_menu .button_span .button1,
+.button3,
+.button4 {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    color: rgb(36, 36, 255);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    display: inline-block;
+}
+
+.navigate_menu .button_span .button1:hover,
+.button3:hover,
+.button4:hover {
+    background-color: #4d4dff;
+    color: #fff;
+}
+
+.navigate_menu hr {
+    width: 100%
+}
+
+.identity_bar {
+    background-color: #c1c1bd;
+    margin: 4px 0px;
+    padding: 5px 5px;
+
+}
+
+.identity_bar p,
+.identity_bar a {
+    font-size: 13px;
+}
+
+.identity_bar a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.mainbody {
+    padding: 15px;
+
+}
+
+.mainbody p.heading1 {
+    margin: 1em 1em 2em;
+    font-size: 18px;
+    text-align: left;
+}
+
+.mainbody .heading2 {
+    padding: 0 0 0.5em 0;
+}
+
+.mainbody span.left_span {
+    display: inline-block;
+    margin: 0 0 0 3em;
+    border: 1px;
+    box-sizing: border-box;
+    width: auto;
+    width: 45%;
+    border-width: 1px;
+
+
+}
+
+.mainbody .delivery_checkbox {
+    display: inline-block;
+    box-sizing: border-box;
+    border-width: 1px;
+    margin: 3em 0 0 3em;
+    width: 45%;
+    font-size: 15px;
+}
+
+.mainbody span.right_span {
+    display: block;
+    margin: 0 3em 0 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 30%;
+    float: right;
+}
+
+.mainbody .left_span table {
+
+    font-size: 15px;
+}
+
+.mainbody .left_span table td {
+    padding: 0.7em 4px 0;
+
+}
+
+
+.mainbody .delivery_checkbox .option_span {
+    padding: 0.5em 0 0;
+}
+
+.mainbody .delivery_checkbox input,
+label {
+    vertical-align: middle;
+
+}
+
+.mainbody .delivery_checkbox input#delivery {
+    margin: 0 7px 0;
+}
+
+.mainbody .delivery_checkbox table {
+    width: 100%;
+}
+
+.mainbody .delivery_checkbox table tr,
+.mainbody .delivery_checkbox table td {
+    padding: 6px 1em 3px 0.5em;
+    border: 0px;
+}
+
+.mainbody span.right_span .heading3 {
+    font-size: 15px;
+    display: inline-block;
+    margin: 1.1em 0;
+    width: 100%;
+
+
+}
+
+.mainbody .right_span .count {
+    float: right;
+    background-color: #ffc0029d;
+    color: rgba(0, 0, 0, 0.754);
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    margin: 0 1em 0 0;
+    text-align: center;
+}
+
+.mainbody .right_span table {
+    padding: 0 5px 5px 0;
+    font-size: 13px;
+    border-collapse: collapse;
+}
+
+.mainbody .right_span table td {
+    padding: 3px 0;
+
+}
+
+.mainbody .right_span table tr td:not(.origin) {
+    border-top: 1px solid black;
+
+    /* add border to top of each td element except those with class "origin" */
+}
+
+.mainbody .right_span .price,
+.mainbody .right_span .total {
+    text-align: right;
+    vertical-align: middle;
+    padding: 0 5px 0 0;
+}
+
+.mainbody .right_span .picture {
+    text-align: center;
+    width: 28%;
+    vertical-align: middle;
+}
+
+.mainbody .right_span .discount,
+.mainbody .right_span .total_description {
+    padding: 3px 0 3px 1em;
+    width: 32%;
+
+}
+
+.mainbody .right_span tr#discount {
+    background-color: rgb(227, 227, 229);
+}
+
+
+.mainbody .right_span .origin {
+    width: 60%;
+}
+
+.mainbody .right_span .itemid {
+    display: inline-block;
+    color: #95a5b2;
+    font-size: 12px;
+
+}
+
+.mainbody .right_span .origin {
+    color: #95a5b2;
+    font-size: 12px;
+}
+
+.mainbody button.submit_button {
+    background-color: rgb(36, 36, 255);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 2em 3.5em;
+    display: inline-block;
+    width: 45%;
+}
+
+.mainbody button.submit_button:hover {
+    background-color: #4d4dff;
+    color: #fff;
+}
+
+.alert-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    text-align: center;
+}
+
+.alert-box p {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.alert-box button {
+    
+    margin: 20px 40px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.alert-box button.cancel {
+    background-color: #f44336;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    display: none;
+}
+

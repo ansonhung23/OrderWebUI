@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Place Order</title>
+</head>
+
+<body>
+    <div class="navigate_menu">
+        <span class="title">
+            <p>Yummy Restaurant Group Limited</p>
+        </span>
+
+        <span class="button_span">
+            <a href="./index.html">
+                <button class="button2">Place Order</button>
+            </a>
+            <a href="./ViewOrder.html">
+                <button class="button3">View Order</button>
+            </a>
+            <a href="./UpdateProfile.html">
+                <button class="button4">Update Profile</button>
+            </a>
+        </span>
+
+        <hr>
+
+    </div>
+    <div class="identity_bar">
+        <p>PM001 Billy Wong &nbsp;| &nbsp;<a>Logout</a></p>
+    </div>
+
+    <div class="mainbody">
+        <p>Place Order</p>
+
+        <div class="table-filter">
+            <div class="row">
+                <div class="col-sm-1">
+                    <div class="show-entries" id="select">
+                        <label for="entrynum-select">Sort By</label>
+                        <select class="form-control" id="entrynum-select">
+                            <option>None</option>
+                            <option value="1">Item ID</option>
+                            <option value="2">Stock Quantity</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="col-sm-2">
+                    <span class="filter-icon"><i class="fa fa-filter"></i></span>
+                    <span class="filter-group1">
+                        <label for="order-id">Item ID</label>
+                        <input type="text" class="form-control" id="order-id">
+                    </span>
+
+                    <span>
+                        <button type="button" class="btn btn-primary">
+                            <img src="./images/search.png" alt="search icon">
+                        </button>
+                    </span>
+
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead class="header">
+                <tr>
+                    <th>Item Image</th>
+                    <th>Item ID</th>
+                    <th>Item Name</th>
+                    <th>Description</th>
+                    <th>Supplier ID</th>
+                    <th>Stock Quantity</th>
+                    <th>Price</th>
+                    <th>Add Order</th>
+                </tr>
+            </thead>
+
+            <tbody class="tbody">
+                <tr>
+                    <td><img src="./images/lemon.png"></td>
+                    <td>FT1441</td>
+                    <td>Lemon</td>
+                    <td>Origin: South Africa</td>
+                    <td>Fruit Delight HK</td>
+                    <td>450</td>
+                    <td>$48</td>
+                    <td class="input_bracket"><input type="number"></td>
+                </tr>
+
+                <tr>
+                    <td><img src="./images/redApple.png"></td>
+                    <td>FT1442</td>
+                    <td>Apple</td>
+                    <td>Fuji Apple 900-1kg</td>
+                    <td>Fruit Mall</td>
+                    <td>300</td>
+                    <td>$72</td>
+                    <td class="input_bracket"><input type="number"></td>
+                </tr>
+
+                <tr>
+                    <td><img src="./images/mango.png"</td>
+                    <td>FT1444</td>
+                    <td>Mango</td>
+                    <td>Origin: Peru</td>
+                    <td>Fruit Deligh HK </td>
+                    <td>400</td>
+                    <td>$78</td>
+                    <td class="input_bracket"><input type="number"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <span>
+            <a href="./PlaceOrder.html">
+                <button class="submit_button" id="create-order-btn">Proceed to Place Order</button>
+            </a>
+        </span>
+
+    </div>
+
+   
+    <script type="text/javascript">
+        //  Cart
+        let cartIcon = document.querySelector("#cart-icon");
+        let cart = document.querySelector(".cart");
+        let closeCart = document.querySelector("#close-cart");
+        // Open Cart
+        cartIcon.onclick = () => {
+            cart.classList.add("active");
+        };
+        // Close Cart
+        closeCart.onclick = () => {
+            cart.classList.remove("active");
+        };
+
+        // Cart Working JS
+        if (document.readyState == "loading") {
+            document.addEventListener("DOMContentLoaded", ready);
+        } else {
+            ready();
+        }
+
+        // Making Function
+        function ready() {
+            // Reomve Items From Cart
+            var reomveCartButtons = document.getElementsByClassName("cart-remove");
+            console.log(reomveCartButtons);
+            for (var i = 0; i < reomveCartButtons.length; i++) {
+                var button = reomveCartButtons[i];
+                button.addEventListener("click", removeCartItem);
+            }
+            // Quantity Changes
+            var quantityInputs = document.getElementsByClassName("cart-quantity");
+            for (var i = 0; i < quantityInputs.length; i++) {
+                var input = quantityInputs[i];
+                input.addEventListener("change", quantityChanged);
+            }
+            // Add To Cart
+            var addCart = document.getElementsByClassName("add-cart");
+            for (var i = 0; i < addCart.length; i++) {
+                var button = addCart[i];
+                button.addEventListener("click", addCartClicked);
+            }
+            // Buy Button Work
+            document
+                .getElementsByClassName("btn-buy")[0]
+                .addEventListener("click", buyButtonClicked);
+        }
+        // Buy Button
+        function buyButtonClicked() {
+            alert("Your Order is placed");
+            var cartContent = document.getElementsByClassName("cart-content")[0];
+            while (cartContent.hasChildNodes()) {
+                cartContent.removeChild(cartContent.firstChild);
+            }
+            updatetotal();
+        }
+
+        // Reomve Items From Cart
+        function removeCartItem(event) {
+            var buttonClicked = event.target;
+            buttonClicked.parentElement.remove();
+            updatetotal();
+        }
+        // Quantity Changes
+        function quantityChanged(event) {
+            var input = event.target;
+            if (isNaN(input.value) || input.value <= 0) {
+                input.value = 1;
+            }
+            updatetotal();
+        }
+        // Add To cart
+        function addCartClicked(event) {
+            var button = event.target;
+            var shopProducts = button.parentElement;
+            var title = shopProducts.getElementsByClassName("product-title")[0].innerText;
+            var price = shopProducts.getElementsByClassName("price")[0].innerText;
+            var productImg = shopProducts.getElementsByClassName("product-img")[0].src;
+            addProductToCart(title, price, productImg);
+            updatetotal();
+        }
+        function addProductToCart(title, price, productImg) {
+            var cartShopBox = document.createElement("div");
+            cartShopBox.classList.add("cart-box");
+            var cartItems = document.getElementsByClassName("cart-content")[0];
+            var cartItemsNames = cartItems.getElementsByClassName("cart-product-title");
+            for (var i = 0; i < cartItemsNames.length; i++) {
+                if (cartItemsNames[i].innerText == title) {
+                    alert("You have already add this item to cart");
+                    return;
+                }
+            }
+            var cartBoxContent = `
+                        <img src="${productImg}" alt="" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">${title}</div>
+                            <div class="cart-price">${price}</div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <!-- Remove Cart -->
+                        <img class='bx bxs-trash-alt cart-remove' src="./img/delete.png">`;
+            cartShopBox.innerHTML = cartBoxContent;
+            cartItems.append(cartShopBox);
+            cartShopBox
+                .getElementsByClassName("cart-remove")[0]
+                .addEventListener("click", removeCartItem);
+            cartShopBox
+                .getElementsByClassName("cart-quantity")[0]
+                .addEventListener("change", quantityChanged);
+        }
+
+        // Update Total
+        function updatetotal() {
+            var cartContent = document.getElementsByClassName("cart-content")[0];
+            var cartBoxes = cartContent.getElementsByClassName("cart-box");
+            var total = 0;
+            for (var i = 0; i < cartBoxes.length; i++) {
+                var cartBox = cartBoxes[i];
+                var priceElement = cartBox.getElementsByClassName("cart-price")[0];
+                var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
+                var price = parseFloat(priceElement.innerText.replace("$", ""));
+                var quantity = quantityElement.value;
+                total = total + price * quantity;
+            }
+            // If price Contain some Cents Value
+            total = Math.round(total * 100) / 100;
+
+            document.getElementsByClassName("total-price")[0].innerText = "$" + total;
+        }
+
+    </script>
+
+</body>
+
+</html>

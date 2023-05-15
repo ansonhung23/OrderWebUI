@@ -1,0 +1,281 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    font-size: 13px;
+}
+
+* img {
+    max-width: 20px;
+    max-height: auto;
+}
+
+.navigate_menu {
+    margin-bottom: 15px;
+
+}
+
+.navigate_menu .title p {
+    display: inline-block;
+    padding: 17px 15px;
+    font-size: 18px;
+
+}
+
+.navigate_menu .button_span {
+    float: right;
+
+}
+
+.navigate_menu .button_span a {
+    text-decoration: none;
+}
+
+.navigate_menu .button_span .button2 {
+    background-color: rgb(36, 36, 255);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+    display: inline-block;
+}
+
+
+.navigate_menu .button_span .button1,
+.button3,
+.button4 {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    color: rgb(36, 36, 255);
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+    display: inline-block;
+}
+
+.navigate_menu .button_span .button2:hover,
+.button3:hover,
+.button4:hover {
+    background-color: #4d4dff;
+    color: #fff;
+}
+
+.navigate_menu hr {
+    width: 100%;
+}
+
+.identity_bar {
+    background-color: #c1c1bd;
+    margin: 4px 0px;
+    padding: 5px 5px;
+
+}
+
+.identity_bar p,
+.identity_bar a {
+    font-size: 13px;
+}
+
+.identity_bar a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.mainbody {
+    text-align: center;
+}
+
+.mainbody p {
+    margin: 1em 1em 0.7em;
+    padding: 15px;
+    font-size: 16px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.table-filter {
+    padding: 0 2em;
+}
+
+
+
+.table-filter .col-sm-1 {
+    width: 50%;
+    display: flex;
+    vertical-align: middle;
+}
+
+.table-filter .show-entries {
+    padding: 0 15px 0 0;
+}
+
+.table-filter .show-entries label {
+    margin-right: 7px;
+}
+
+
+
+.table-filter .col-sm-2 {
+    width: 100%;
+    text-align: right;
+    vertical-align: middle;
+
+}
+
+.table-filter .col-sm-2 input {
+    border-style: solid;
+    border-color: #e9e9e9;
+    width: 10em;
+}
+
+
+.table-filter .col-sm-2 button {
+    vertical-align: middle;
+}
+
+.table-filter .row {
+    width: 100%;
+    display: flex;
+
+}
+
+.table-filter input,
+.table-filter select {
+    height: 34px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #ddd;
+    box-shadow: none;
+}
+
+
+
+.table-filter {
+    padding: 5px 0 15px;
+    border-bottom: 1px solid #e9e9e9;
+    margin: 0 3em;
+    margin-bottom: 5px;
+}
+
+.table-filter .btn {
+    margin-left: 20px;
+    height: 34px;
+    padding: 0px 3px;
+    background-color: light;
+    opacity: 80%;
+}
+
+.table-filter .col-sm-2 p {
+    display: inline-block;
+}
+
+.table-filter .col-sm-2 label {
+    font-weight: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mainbody table th {
+    border-bottom: 1px solid rgb(157, 157, 157);
+}
+
+.mainbody table,
+.mainbody tr {
+    border-bottom: 1px solid #dee2e6;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.mainbody table {
+    border-right: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: auto;
+    width: 90%;
+}
+
+.mainbody table th {
+    padding: 8px 15px 13px;
+}
+
+.mainbody table td {
+    padding: 12px 15px;
+}
+
+.mainbody .tbody tr:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.mainbody input {
+    width: 45px;
+}
+
+.mainbody button.submit_button {
+    background-color: rgb(105, 105, 248);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 7em 3.5em;
+    display: inline-block;
+    width: 45%;
+}
+
+.mainbody button.submit_button:hover {
+    background-color: #4d4dff;
+    color: #fff;
+}
+
+.alert-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    text-align: center;
+}
+
+.alert-box p {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.alert-box button {
+
+    margin: 20px 40px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.alert-box button.cancel {
+    background-color: #f44336;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    display: none;
+}
