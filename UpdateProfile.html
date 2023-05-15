@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            font-size: 13px;
+        }
+
+        * img {
+            max-width: 30px;
+            max-height: auto;
+        }
+
+        .navigate_menu {
+            margin-bottom: 15px;
+
+        }
+
+        .navigate_menu .title p {
+            display: inline-block;
+            padding: 17px 15px;
+            font-size: 18px;
+            text-align: middle;
+
+        }
+
+        .navigate_menu .button_span {
+            float: right;
+        }
+
+        .navigate_menu .button_span a {
+            text-decoration: none;
+        }
+
+        .navigate_menu .button_span .button4 {
+            background-color: rgb(36, 36, 255);
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 4px 2px;
+            display: inline-block;
+        }
+
+
+        .navigate_menu .button_span .button1,
+        .button2,
+        .button3 {
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            color: rgb(36, 36, 255);
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 4px 2px;
+            display: inline-block;
+        }
+
+        .navigate_menu .button_span .button1:hover,
+        .button3:hover,
+        .button4:hover {
+            background-color: #4d4dff;
+            color: #fff;
+        }
+
+        .navigate_menu hr {
+            width: 100%
+        }
+
+        .identity_bar {
+            background-color: #c1c1bd;
+            margin: 4px 0px;
+            padding: 5px 5px;
+
+        }
+
+        .identity_bar p,
+        .identity_bar a {
+            font-size: 13px;
+        }
+
+        .identity_bar a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        .mainbody p {
+            margin: 1em 1em 0.7em;
+            padding: 15px;
+            font-size: 16px;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .input-group {
+            margin: 0 0 0 30px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            width: 30%;
+            font-size: 14px;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+
+       
+
+
+
+        input[type=submit] {
+            background-color: rgb(36, 36, 255);
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 2em 3.5em;
+            
+            width: 45%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type=submit]:hover {
+            background-color: #4d4dff;
+            color: #fff;
+        }
+
+        .alert-box {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f2f2f2;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            text-align: center;
+        }
+
+        .alert-box p {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .alert-box button {
+
+            margin: 20px 40px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .alert-box button.cancel {
+            background-color: #f44336;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+            display: none;
+        }
+    </style>
+
+    <title>Update Profile</title>
+</head>
+
+<body>
+    <div class="navigate_menu">
+        <span class="title">
+            <p class="heading">Yummy Restaurant Group Limited</p>
+        </span>
+
+        <span class="button_span">
+            
+            <a href="./index.html">
+                <button class="button2">Place Order</button>
+            </a>
+            <a href="./ViewOrder.html">
+                <button class="button3">View Order</button>
+            </a>
+            <a href="./UpdateProfile.html">
+                <button class="button4">Update Profile</button>
+            </a>
+        </span>
+
+        <hr>
+
+    </div>
+    <div class="identity_bar">
+        <p>PM001 Billy Wong &nbsp;| &nbsp;<a>Logout</a></p>
+    </div>
+
+    <div class="mainbody">
+
+        <p>Update Profile</p>
+        <p>Please update the required information below:</p>
+        <div id="update-info-form">
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter new password"
+                    pattern="^[\w@-]{8,20}$" title="Please enter new password at least 8 characters">
+            </div>
+            <div class="input-group">
+                <label for="contact-number">Contact Number:</label>
+                <input type="tel" id="contact-number" name="contact_number" placeholder="Enter new contact number"
+                    pattern="[0-9]{8}" title="Please enter contact number in 8-digit">
+
+            </div>
+            <div class="input-group">
+                <label for="warehouse-address">Warehouse Address:</label>
+                <textarea id="warehouse-address" name="warehouse_address" rows="4" cols="50"
+                    placeholder="Enter new warehouse address"></textarea>
+            </div>
+            <input type="submit" id="update-btn" value="Update Information">
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+<script type="text/javascript">
+    /*Submit Button*/
+    const createOrderBtn = document.getElementById('update-btn');
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+
+    createOrderBtn.addEventListener('click', () => {
+        const passwordInput = document.getElementById('password');
+        const contactNumberInput = document.getElementById('contact-number');
+        const warehouseAddressInput = document.getElementById('warehouse-address');
+
+        const passwordPattern = /^[\w@-]{8,20}$/; //password pattern: at least 8 characters, max 20 characters, only allows word characters, @, and -
+        const contactNumberPattern = /^[0-9]{8}$/; //contact number pattern: 8-digit number only
+        const warehouseAddressPattern = /^[a-zA-Z0-9\s,'-]*$/; //warehouse address pattern: allows letters, numbers, spaces, comma, apostrophe, and hyphen
+
+        if (!passwordPattern.test(passwordInput.value)) {
+            alert('Please enter a password with at least 8 characters, max 20 characters, and only allows word characters, @, and -');
+            return;
+        }
+
+        if (!contactNumberPattern.test(contactNumberInput.value)) {
+            alert('Please enter a contact number in 8-digit format');
+            return;
+        }
+
+        if (!warehouseAddressPattern.test(warehouseAddressInput.value)) {
+            alert('Please enter a valid warehouse address with letters, numbers, spaces, comma, apostrophe, and hyphen');
+            return;
+        }
+
+        const alertBox = document.createElement('div');
+        alertBox.className = 'alert-box';
+
+        const message = document.createElement('p');
+        message.textContent = 'Are you sure to update the information?';
+
+        const confirmBtn = document.createElement('button');
+        confirmBtn.textContent = 'Yes';
+
+        const cancelBtn = document.createElement('button');
+        cancelBtn.textContent = 'No';
+        cancelBtn.className = 'cancel';
+
+        alertBox.appendChild(message);
+        alertBox.appendChild(confirmBtn);
+        alertBox.appendChild(cancelBtn);
+        document.body.appendChild(alertBox);
+        document.body.appendChild(overlay);
+
+        confirmBtn.addEventListener('click', () => {
+            alertBox.remove();
+            overlay.style.display = 'none';
+            alert('Info is now up-to-date');
+        });
+
+        cancelBtn.addEventListener('click', () => {
+            alertBox.remove();
+            overlay.style.display = 'none';
+            alert('Update Info request cancelled');
+        });
+
+        overlay.style.display = 'block';
+    });
+
+</script>
+
+
+
+
+</script>
+
+
+</html>
