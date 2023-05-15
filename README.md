@@ -26,6 +26,6 @@ One of the challenges in the development process was understanding what features
 
 # Learning Outcome
 
-This project presented an opportunity to apply and solidify the understanding of HTML, CSS, and JavaScript in a practical scenario. It also highlighted the importance of user interface design and planning in web development. The experience gained from this project underlines the significance of understanding user requirements and translating them into a functional, user-friendly application tailored for a fictional company.
+This project presented an opportunity to apply and solidify the understanding of HTML, CSS, and JavaScript in a practical scenario. It also highlighted the importance of user interface design and planning in web development. The experience gained from this project underlines the significance of understanding user requirements and translating them into a functional, user-friendly application tailored for a fictional company.<br/><br/>
 
-The project is still ongoing, and more features and functionalities will be added in the future. Contributions and suggestions are welcomed!
+<strong>Note:</strong>The project is still ongoing, and more features and functionalities will be added in the future. Contributions and suggestions are welcomed!
